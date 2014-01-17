@@ -25,7 +25,7 @@ done < images.txt
 
 # Grabs card titles with mnemonics and saves to .txt files
 cat $1 | grep -e "var[ ]*panelSummarys" | sed 's/\", \"/\
-/g' | sed 's/");//g' | sed 's/var panelSummarys = new Array("//g' > menemonicTitles.txt
+/g' | sed 's/");//g' | sed 's/var panelSummarys = new Array("//g' > mnemonicTitles.txt
 cat $1 | grep -e "var[ ]*panelTitles" | sed 's/\", \"/\
 /g' | sed 's/");//g' | sed 's/var panelTitles = new Array("//g' > titles.txt
 
