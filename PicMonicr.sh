@@ -1,8 +1,8 @@
 # Title: PicMonicr - Easy way to download and parse cards from Picmonic
 # Author: Nick Honko (2014-01-17)
 # Notes:
-# View source, then save source and send that as the only arugment when executing.
-# Must have imageMagick installed for resizing/recompressing of images
+# View source in browser, then save source and send that as the only arugment when executing.
+# Must have ImageMagick installed for resizing/recompressing of images
 
 # Finds base URL for image downloads:
 URL=`cat $1 | grep '"panel"' | grep '"url"' | sed 's/"panel"/%/g' | cut -f2 -d\% | cut -d: -f5 | cut -f1 -d\" | sed 's/\\\\//g'`
@@ -46,7 +46,5 @@ sed -i .bk 's/\&nbsp;//g' $x.txt
 sed -i .bk 's/;//g' $x.txt
 sed -i .bk 's/\\//g' $x.txt
 done
-#sed -i 's/\n/\n\n/g' attributes.txt
 rm -f *.bk
-#| sed 's/(/\n/g' | sed 's/)/\n/g' | sed 's/,/\n/g'
 
