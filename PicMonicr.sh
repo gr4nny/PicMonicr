@@ -1,4 +1,4 @@
-# Title: PicMonicr - Easy way to download and parse cards from Picmonic
+# Title: PicMonicr - Easy way to download and parse cards from Picmonic (r)
 # Author: Nick Honko (2014-01-17)
 # Notes:
 # View source in browser, then save source and send that as the only arugment when executing.
