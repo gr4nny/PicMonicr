@@ -46,5 +46,6 @@ sed -i .bk 's/\&nbsp;//g' $x.txt
 sed -i .bk 's/;//g' $x.txt
 sed -i .bk 's/\\//g' $x.txt
 done
-rm -f *.bk
 
+# Remove all the backup files required by sed in OS X
+rm -f *.bk
