@@ -18,8 +18,8 @@ cat $1 | grep -e "var[ ]*panelImages" | sed 's/,/\
 # then resizes and recompresses them to be nice for Anki
 while read r
 do
-curl -O "http://app.picmonic.com/cloud_data/images_panel/$r"
-echo curl -O "http://app.picmonic.com/cloud_data/images_panel/$r"
+curl -O "http://picmonic.s3.amazonaws.com/cloud_data/images_panel/$r"
+echo curl -O "http://picmonic.s3.amazonaws.com/cloud_data/images_panel/$r"
 convert $r -resize 640 -quality 70 $r
 done < images.txt
 
