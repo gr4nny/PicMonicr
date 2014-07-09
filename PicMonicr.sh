@@ -1,6 +1,6 @@
 # Title: PicMonicr - Easy way to download and parse cards from Picmonic (r)
 # Author: Nick Honko (2014-01-17)
-# Notes:
+# Notes: A note.
 # View source in browser, then save source and send that as the only arugment when executing.
 # Must have ImageMagick installed for resizing/recompressing of images
 
